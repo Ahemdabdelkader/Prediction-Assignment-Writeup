@@ -13,8 +13,16 @@ The data for this project come from this source: http://groupware.les.inf.puc-ri
 Several columns of the raw data set have string contaning nothing, so we delete those columns first, and we also delete the first 7 columns: X, user_name, raw_timestamp_part_1, raw_timestamp_part_2, cvtd_timestamp, new_window, num_window. These features are obviously not related to predict the outcome.
 
 ```{r}
+rm(list=ls())                # free up memory for the download of the data sets
+setwd("~/Cursos/Data Science/08 Practical Machine Learning/Projeto")
+library(knitr)
 library(caret)
-set.seed(12463)
+library(rpart)
+library(rpart.plot)
+library(rattle)
+library(randomForest)
+library(corrplot)
+set.seed(12345)
 
 training <- read.csv("pml-training.csv", stringsAsFactors=FALSE)
 training$classe <- as.factor(training$classe)
