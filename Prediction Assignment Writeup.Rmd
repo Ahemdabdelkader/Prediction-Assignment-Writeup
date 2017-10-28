@@ -1,8 +1,5 @@
 ---
 title: "Prediction Assignment Writeup"
-author: "Tsung-Hsien Lin"
-date: "July 27, 2014"
-output: html_document
 ---
 
 The goal of this project is to predict the manner in which people did the exercise.
