@@ -1,5 +1,9 @@
 ---
-title: "Prediction Assignment Writeup"
+title: "Machine Learning Prediction Project"
+author: "Ahmed Abdelkader"
+Date: 28-Oct-2017
+output:
+  html_document: default
 ---
 
 The goal of this project is to predict the manner in which people did the exercise.
